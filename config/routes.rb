@@ -19,7 +19,7 @@ SampleApp::Application.routes.draw do
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
   
-
+  resources :microposts, only: [:create, :destroy]
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
