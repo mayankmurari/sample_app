@@ -44,6 +44,7 @@ group :development, :test do
   gem 'spork-rails', '4.0.0'
   gem 'guard-spork', '1.5.0'
   gem 'childprocess', '0.3.6'
+  gem 'jquery-ui-rails'
 end
 
 group :test do
@@ -56,6 +57,7 @@ group :test do
 end  
 
 group :production do
+  gem 'jquery-ui-rails'
   gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'   
 end
